@@ -9,6 +9,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="styles/font.css">
     <link rel="stylesheet" href="styles/normalize.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/themes/sfs_style.css">
@@ -28,7 +29,7 @@
 
 <div class="container">
 
-	<div class="logo"><img src="img/logo.svg" alt="Logo"></div>
+	<div class="logo"><img src="images/logo.svg" alt="Logo"></div>
 
     <div class="social">
         <a href="http://facebook.com/sebastian.felix" class="icon-facebook" title="Facebook"></a>
@@ -41,7 +42,7 @@
     <header>
         <nav id="nav">
             <ul class="nav">
-                <li><img src="img/logo.svg" alt="My Logo"></li>
+                <li><img src="images/logo.svg" alt="My Logo"></li>
                 <li><a href="index.html" class="icon-user"><span>Mein Zuhause</span></a></li>
                 <li class="active"><a href="work.html" class="icon-briefcase"><span>Meine Arbeit</span></a></li>
                 <li><a href="resume.html" class="icon-list"><span>Meine Stationen</span></a></li>
@@ -96,11 +97,11 @@
 
 			<div class="slider-wrapper theme-default clearfix">
 	            <div class="slider NivoSLider">
-	                <img src="img/work/LP10/img1.png" data-thumb="img/work/LP10/img1.png" alt="" title="" />
-	            	<img src="img/work/LP10/img2.png" data-thumb="img/work/LP10/img2.png" alt="" />
-	                <img src="img/work/LP10/img3.png" data-thumb="img/work/LP10/img3.png" alt="" />
-	                <img src="img/work/LP10/img4.png" data-thumb="img/work/LP10/img4.png" alt="" />
-	                <img src="img/work/LP10/img5.png" data-thumb="img/work/LP10/img5.png" alt="" />
+	                <img src="images/work/LP10/img1.png" data-thumb="images/work/LP10/img1.png" alt="" title="" />
+	            	<img src="images/work/LP10/img2.png" data-thumb="images/work/LP10/img2.png" alt="" />
+	                <img src="images/work/LP10/img3.png" data-thumb="images/work/LP10/img3.png" alt="" />
+	                <img src="images/work/LP10/img4.png" data-thumb="images/work/LP10/img4.png" alt="" />
+	                <img src="images/work/LP10/img5.png" data-thumb="images/work/LP10/img5.png" alt="" />
 	               </div>
 	        </div>
 			<!-- Slider End -->
@@ -150,34 +151,10 @@
 <script src="scripts/jquery.swipebox.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.nivo.slider.min.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/projekt.js"></script>
 <!-- endbuild -->
 <!-- Add your scripts here -->
 
-<script>
-
-    // Mixitup Filter Gallery
-    $(function(){
-        $('.work-grid').mixitup();
-    });
-
-    // Swipebox Gallery
-    $(function($) {
-        $(".swipebox").swipebox();
-    });
-
-    // Nivo Slider
-    $(window).load(function() {
-        $('.slider').nivoSlider({
-            effect: 'boxRandom',
-            slices: 15,
-            boxCols: 8,
-            boxRows: 4,
-            animSpeed: 500,
-            pauseTime: 3000,
-            controlNav: true
-        });
-    });
-</script>
 
 </body>
 </html>

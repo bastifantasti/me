@@ -208,8 +208,6 @@ module.exports = function (grunt) {
                     src: [
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
-                        '<%= config.dist %>/*.{ico,png}'
                     ]
                 }
             }
@@ -239,9 +237,9 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= config.app %>/images',
-                    src: '**/*.{png,jpg,gif}',
-                    dest: '<%= config.dist %>/images'
+                    cwd: '<%= config.app %>/images/work',
+                    src: '**/*.png',
+                    dest: '<%= config.dist %>/images/work'
                 }]
             }
         },
@@ -315,7 +313,7 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
-                        'images/{,*/}*.webp',
+                        'images/**/*.*',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*'
                     ]
