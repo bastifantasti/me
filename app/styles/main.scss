@@ -1,27 +1,41 @@
 $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-
+@import "slick";
 
 .browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
 }
-.red{
-  color:#ff0000;
+
+.red {
+  color: #ff0000;
 }
-.green{
+
+.green {
   color: #1aa014;
 }
-a.twitter{
+
+a.twitter {
   color: #55ACEE;
   padding: 0;
   background: none;
   margin-right: 0;
 }
-a.facebook{
+
+a.facebook {
   color: #3B5998;
   padding: 0;
   background: none;
   margin-right: 0;
+}
+
+.slider {
+  div {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
